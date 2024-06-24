@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .container{
+        background-color: darkseagreen;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    border-radius: 20%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: auto; /* This centers the container horizontally */
+    margin-top: 100px; /* Adjust top margin as needed */
+    margin-bottom: 100px; /* Adjust bottom margin as needed */
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center; /* This centers the content horizontally */
+    align-items: center;
+  
+    overflow-y: scroll;
+    text-overflow:clip;
+        
+    }span{
+        display:block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        
+
+    }
+    .btn1{
+        
+        padding: 100px;
+    } .btn{
+        background-color: cyan;
+        font-style: oblique;
+        font-weight:bold;
+        padding: 10px;
+        cursor: pointer;
+
+    }.btn:hover{
+        color: rgb(17, 57, 234);
+    }#joke{
+        font-size: 20px;
+        font-style: italic;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        word-wrap: break-word;
+        text-align: center;
+        line-height: 25px;
+    }p{
+        opacity: 0;
+    }.fade{
+        opacity: 1;
+        transition: opacity 1.5s;
+    }
+</style>
+<body style="background-color: brown;">
+    <div class="container">
+        <h1 class="heading">RandomJokeGenerator</h1>
+        <span style='font-size:100px;'>&#128514;</span>
+        <p id="joke">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, minus. Placeat quis ut, adipisci impedit libero, fuga ex obcaecati dolorem, a quaerat quo est debitis ad voluptatem numquam pariatur eligendi architecto nisi dolore incidunt ipsam repudiandae iure itaque. Quasi exercitationem facere quisquam fugit maxime itaque repellendus maiores totam architecto ipsam? sit amet consectetur ,Lorem ipsum dolor sit amet. tenetur incidunt odit dolor totam eius minus dicta libero consequatur aliquid! Porro nesciunt veritatis, neque minima voluptatibus quibusdam! Ipsam nesciunt perferendis hic! Iure aperiam temporibus harum corporis, sequi error?</p>
+        <div class="btn1">
+        <button class="btn"> Joke Generate</button>
+    </div>
+    </div>
+    <script src="randomJokegenerator.js"></script>
+</body>
+</html>
